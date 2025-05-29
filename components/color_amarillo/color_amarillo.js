@@ -1,4 +1,3 @@
-// amarillo.js
 export function crearAmarillo() {
   const amarillo = document.createElement("div");
   amarillo.className = "amarillo oscuro";
@@ -8,17 +7,12 @@ export function crearAmarillo() {
 
 export async function obtenerEstadoAmarillo() {
   const url =
-    "https://api.thingspeak.com/channels/2974131/fields/5.json?api_key=S7T0AJNHT2B3FK7J&results=1";
+    "https://semafororockemma-default-rtdb.firebaseio.com/semaforo/led2.json";
 
   try {
     const response = await fetch(url);
     const data = await response.json();
-
-    if (data.feeds && data.feeds.length > 0) {
-      const valor = parseInt(data.feeds[0].field5);
-      return isNaN(valor) ? 0 : valor;
-    }
-    return 0;
+    return data === 1 ? 1 : 0;
   } catch (error) {
     console.error("Error obteniendo datos del LED amarillo:", error);
     return 0;
@@ -39,10 +33,8 @@ export function actualizarEstadoAmarillo(valor) {
 }
 
 export function iniciarMonitoreoAmarillo() {
-  // Consulta inmediata
   obtenerEstadoAmarillo().then(actualizarEstadoAmarillo);
 
-  // Consulta periódica cada 2 segundos
   setInterval(async () => {
     const estado = await obtenerEstadoAmarillo();
     actualizarEstadoAmarillo(estado);
