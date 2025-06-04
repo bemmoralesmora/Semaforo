@@ -52,3 +52,30 @@
   font-size: 10px;
   font-weight: 700;
 }
+
+@media screen and (max-width: 480px) {
+  .controlador {
+    flex-direction: column;
+    gap: 0.5rem;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .controlador .btns {
+    width: 100%;
+    max-width: 12rem;
+    height: auto;
+    padding: 0.5rem;
+    gap: 0.25rem;
+  }
+
+  .btns button {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .btns h1 {
+    font-size: 0.7rem;
+  }
+}
