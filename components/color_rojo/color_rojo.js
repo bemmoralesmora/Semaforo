@@ -7,7 +7,7 @@ export function crearRojo() {
 
 export async function obtenerEstadoRojo() {
   const url =
-    "https://semafororockemma-default-rtdb.firebaseio.com/semaforo/led1.json";
+    "https://semafororockemma-default-rtdb.firebaseio.com/semaforo/rojo.json";
 
   try {
     const response = await fetch(url);

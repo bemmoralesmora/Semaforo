@@ -7,7 +7,7 @@ export function crearAmarillo() {
 
 export async function obtenerEstadoAmarillo() {
   const url =
-    "https://semafororockemma-default-rtdb.firebaseio.com/semaforo/led2.json";
+    "https://semafororockemma-default-rtdb.firebaseio.com/semaforo/amarillo.json";
 
   try {
     const response = await fetch(url);

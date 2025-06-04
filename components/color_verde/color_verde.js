@@ -7,7 +7,7 @@ export function crearVerde() {
 
 export async function obtenerEstadoVerde() {
   const url =
-    "https://semafororockemma-default-rtdb.firebaseio.com/semaforo/led3.json";
+    "https://semafororockemma-default-rtdb.firebaseio.com/semaforo/verde.json";
 
   try {
     const response = await fetch(url);
