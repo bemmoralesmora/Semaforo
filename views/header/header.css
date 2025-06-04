@@ -29,3 +29,30 @@
   height: 100%;
   object-fit: cover;
 }
+
+/* ...tu CSS existente... */
+
+@media screen and (max-width: 480px) {
+  .header {
+    height: auto;
+    flex-direction: column;
+    padding: 0.5rem;
+    gap: 0.5rem;
+  }
+
+  .title-h {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .rasberyPico {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .rasberyPico img {
+    width: 100%;
+    height: auto;
+  }
+}
+
