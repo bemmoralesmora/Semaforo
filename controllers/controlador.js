@@ -32,11 +32,11 @@ function controlador() {
 
   let btn_off = document.createElement("button");
   btn_off.className = "btn_off";
-  btn_off.addEventListener("click", () => enviarComando("apagar"));
+  btn_off.addEventListener("click", () => enviarComando("rojo"));
   btn_apagar.appendChild(btn_off);
 
   let text_btn_off = document.createElement("h1");
-  text_btn_off.textContent = "off";
+  text_btn_off.textContent = "rojo";
   btn_apagar.appendChild(text_btn_off);
 
   // Botón Encender
@@ -46,11 +46,11 @@ function controlador() {
 
   let btn_on = document.createElement("button");
   btn_on.className = "btn_on";
-  btn_on.addEventListener("click", () => enviarComando("encender"));
+  btn_on.addEventListener("click", () => enviarComando("verde"));
   btn_encender.appendChild(btn_on);
 
   let text_btn_on = document.createElement("h1");
-  text_btn_on.textContent = "on";
+  text_btn_on.textContent = "verde";
   btn_encender.appendChild(text_btn_on);
 
   // Botón Parpadear
@@ -60,11 +60,11 @@ function controlador() {
 
   let btn_parpe = document.createElement("button");
   btn_parpe.className = "btn_parpe";
-  btn_parpe.addEventListener("click", () => enviarComando("parpadear"));
+  btn_parpe.addEventListener("click", () => enviarComando("amarillo"));
   btn_parpadear.appendChild(btn_parpe);
 
   let text_btn_parpe = document.createElement("h1");
-  text_btn_parpe.textContent = "Parpadear";
+  text_btn_parpe.textContent = "amarillo";
   btn_parpadear.appendChild(text_btn_parpe);
 
   // Botón Reiniciar
