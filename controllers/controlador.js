@@ -11,7 +11,6 @@ function controlador() {
   let controlador = document.createElement("section");
   controlador.className = "controlador";
 
-  // Función para manejar el envío de comandos
   const enviarComando = (accion) => {
     set(ref(db, "comandos/raspberry"), {
       accion: accion,

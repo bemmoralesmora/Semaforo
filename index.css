@@ -1,12 +1,12 @@
 .dom {
-  width: 375px;
+  width: 770px;
   height: 100vh;
   margin: auto;
   border-radius: 1rem;
   gap: 1rem;
 
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
 
@@ -22,4 +22,3 @@
     gap: 1rem;
   }
 }
-
