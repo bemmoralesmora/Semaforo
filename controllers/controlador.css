@@ -36,16 +36,32 @@
   background-color: red;
 }
 
+.btn_off:hover {
+  background-color: rgb(136, 28, 28);
+}
+
 .btn_on {
   background-color: rgb(69, 233, 69);
+}
+
+.btn_on:hover {
+  background-color: rgb(7, 124, 7);
 }
 
 .btn_parpe {
   background-color: rgb(255, 230, 0);
 }
 
+.btn_parpe:hover {
+  background-color: rgb(122, 111, 4);
+}
+
 .btn_restart {
   background-color: rgb(43, 117, 255);
+}
+
+.btn_restart:hover {
+  background-color: rgb(2, 47, 131);
 }
 
 .btns h1 {
