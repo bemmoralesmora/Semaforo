@@ -13,3 +13,26 @@
   align-items: center;
   gap: 2rem;
 }
+
+.sensor .titulo_dht11 {
+  font-size: 50px;
+  color: white;
+}
+
+.ventilador {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 1rem;
+}
+
+.ventilador .img_movimiento {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ventilador .img_statica {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

@@ -12,8 +12,11 @@ function humedad() {
 
   let logo_hum = document.createElement("div");
   logo_hum.className = "logo_hum";
-  logo_hum.innerHTML = `<img src="../../assets/humedad.png" alt="">`;
   humedad.appendChild(logo_hum);
+
+  let img_hum = document.createElement("img");
+  img_hum.src = "../../assets/humedad.png";
+  logo_hum.appendChild(img_hum);
 
   let dato_hum = document.createElement("h1");
   dato_hum.className = "dato_hum";
@@ -29,10 +32,10 @@ function humedad() {
   const sensorRef = ref(db, "sensor");
   onValue(sensorRef, (snapshot) => {
     const data = snapshot.val();
-    if (data && !isNaN(data.hum)) {
-      dato_hum.textContent = data.hum.toFixed(2); // Mostrar con 2 decimales
+    if (data && typeof data.humedad === "number") {
+      dato_hum.textContent = data.humedad.toFixed(1); // Mostrar con 1 decimal
     } else {
-      dato_hum.textContent = "--"; // Mostrar si no hay datos
+      dato_hum.textContent = "--";
     }
   });
 
