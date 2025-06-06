@@ -14,7 +14,7 @@ function temperatura() {
   temperatura.appendChild(logo_temp);
 
   let temp_img = document.createElement("img");
-  temp_img.src = "../../assets/temp.png";
+  temp_img.src = "https://cdn-icons-png.flaticon.com/512/6239/6239785.png";
   logo_temp.appendChild(temp_img);
 
   let dato_temp = document.createElement("h1");
