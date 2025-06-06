@@ -8,9 +8,10 @@ function header() {
 
   let img_rasbery = document.createElement("div");
   img_rasbery.className = "rasberyPico";
-  img_rasbery.innerHTML = `
-  <img src="../../assets/raspberry-pi.svg" alt="">
-  `;
+
+  let raspberry_img = document.createElement("img");
+  raspberry_img.src = "../../assets/raspberry-pi.svg";
+  img_rasbery.appendChild(raspberry_img);
 
   header.appendChild(img_rasbery);
   header.appendChild(title);
