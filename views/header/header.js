@@ -10,7 +10,8 @@ function header() {
   img_rasbery.className = "rasberyPico";
 
   let raspberry_img = document.createElement("img");
-  raspberry_img.src = "../../assets/raspberry-pi.svg";
+  raspberry_img.src =
+    "https://upload.wikimedia.org/wikipedia/de/thumb/c/cb/Raspberry_Pi_Logo.svg/570px-Raspberry_Pi_Logo.svg.png";
   img_rasbery.appendChild(raspberry_img);
 
   header.appendChild(img_rasbery);
