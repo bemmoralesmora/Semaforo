@@ -15,7 +15,7 @@ function humedad() {
   humedad.appendChild(logo_hum);
 
   let img_hum = document.createElement("img");
-  img_hum.src = "../../assets/humedad.png";
+  img_hum.src = "https://cdn-icons-png.flaticon.com/512/3262/3262966.png";
   logo_hum.appendChild(img_hum);
 
   let dato_hum = document.createElement("h1");

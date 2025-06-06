@@ -19,13 +19,15 @@ function sensor() {
   sensor.appendChild(ventilador);
 
   let img_estatica = document.createElement("img");
-  img_estatica.src = "../../assets/ventilador_2.png";
+  img_estatica.src =
+    "https://static.vecteezy.com/system/resources/previews/015/657/807/non_2x/ventilator-electric-fan-cartoon-icon-household-devices-for-air-cooling-and-conditioning-climate-control-png.png";
   img_estatica.className = "img_ventilador img_statica";
   ventilador.appendChild(img_estatica);
 
   let img_movimiento = document.createElement("img");
   img_movimiento.className = "img_ventilador img_movimiento";
-  img_movimiento.src = "../../assets/ventilador.gif";
+  img_movimiento.src =
+    "https://media.baamboozle.com/uploads/images/71279/1604362986_531421";
   ventilador.appendChild(img_movimiento);
 
   // Ocultar gif inicialmente
